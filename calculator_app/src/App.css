@@ -1,0 +1,93 @@
+/* Overall App Styling */
+.App {
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.calculator-main{
+  border: 1px solid #e0e0e0; /* Maintain border for now */
+  height: auto;
+  width: auto;
+  background-color: #202020; /* Dark charcoal background */
+}
+.calculator-IO{
+  color: white;
+  font-size: 40px;
+  
+  text-align: center;
+  display: flex;
+  align-items: center;
+  height :150px;
+  background-color: #303030; /* Slightly lighter charcoal */
+}
+.calculator-function{
+  border: 1px solid #f9f9f9; /* Maintain border for now */
+  background-color: #303030; /* Consistent dark background */
+  display: grid;
+  padding: 10px;
+  grid-template-columns: auto auto auto auto auto ;
+  grid-template-rows: auto auto auto auto auto ;
+  
+}
+.clear-block{
+  grid-column: 1 / 4;
+  grid-row: 1/2;
+  height: 100px;
+  background-color: #404040; /* Even lighter charcoal */
+}
+.numbers{
+  grid-column: 1 / 4;
+  grid-row: 2/5;
+  height: 300px;
+  width: 300px;
+  background-color: #404040; /* Consistent dark background */
+  grid-template-columns: auto auto auto  ;
+  grid-template-rows: auto auto auto  ;
+  gap: 4px;
+  
+  
+}
+.basic-fun{
+  grid-column: 4 / 5;
+  grid-row: 1/6;
+  background-color: #404040; /* Consistent dark background */
+  height: 500px;
+  display:flex;
+  flex-direction: column;
+  
+  
+}
+.zero-block{
+  grid-column: 1 / 4;
+  grid-row: 5/6;
+  height: 100px;
+  background-color: #404040; /* Even lighter charcoal */
+  grid-template-columns: auto auto auto ;
+  grid-template-rows: auto ;
+}
+button {
+  background-color:#4d4d4d; /* Dark gray button background */
+  color: white; /* White text */
+  border: none;
+  padding: 5px;
+  font-size: 40px;
+  height: 90px;
+  width: 90px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: 20%;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: #696969; /* Slightly lighter gray on hover */
+}
+
+button:active {
+  transform: translateY(2px);
+}
+.zero-button{
+  grid-column: 1 / 4;
+  grid-row: 1/2;
+}
